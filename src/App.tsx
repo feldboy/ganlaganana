@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Plane as Plant, Phone, Mail, Clock, MapPin, Flower2, Trees as Tree, Sprout } from 'lucide-react';
+import { AnimatedTestimonialsDemo } from './components/ui/code.demo';
 
 function App() {
   useEffect(() => {
@@ -32,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mx-auto">
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -115,6 +116,13 @@ function App() {
         </div>
       </section>
 
+      {/* Animated Testimonials Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedTestimonialsDemo />
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-green-600">
         <div className="container mx-auto px-4 text-center">
@@ -135,19 +143,19 @@ function App() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center animate-on-scroll">צרו קשר</h2>
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 justify-center">
               <div className="flex items-center gap-4 animate-on-scroll from-left" style={{ transitionDelay: '200ms' }}>
                 <MapPin className="h-6 w-6 text-green-600 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-gray-800">כתובת</h3>
-                  <p className="text-gray-600">רחוב הגינה 123, תל אביב</p>
+                <div className="text-center">
+                  <h3 className="font-semibold text-center text-gray-800 text-center">כתובת</h3>
+                  <p className="text-center text-gray-600 text-center">רחוב הגינה 123, תל אביב</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 animate-on-scroll from-left" style={{ transitionDelay: '400ms' }}>
                 <Phone className="h-6 w-6 text-green-600 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-gray-800">טלפון</h3>
-                  <p className="text-gray-600">03-1234567</p>
+                <div className="text-center">
+                  <h3 className="font-semibold text-center text-gray-800 text-center">כתובת</h3>
+                  <p className="text-center text-gray-600 text-center">רחוב הגינה 123, תל אביב</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 animate-on-scroll from-left" style={{ transitionDelay: '600ms' }}>
